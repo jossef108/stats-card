@@ -1,0 +1,148 @@
+/* 
+font-family: "Work Sans", serif;
+font-family: "Outfit", serif; 
+*/
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(233, 47%, 7%);
+}
+
+.container {
+    width: 55em;
+    height: 25em;
+    display: flex;
+}
+
+.stats-card-content {
+    background-color: hsl(244, 38%, 16%);
+    border-top-left-radius: 0.5em;
+    border-bottom-left-radius: 0.5em;
+    padding: 3em;
+    width: 100%;
+}
+
+.stats-header {
+    color: white;
+    font-weight: 600;
+    font-family: "Outfit", serif; 
+}
+
+.col {
+    color: hsl(277, 64%, 61%);
+}
+
+.stats-details {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-family: "Outfit", serif; 
+    font-weight: 200;
+    font-size: 15px;
+    margin-bottom: 3em;
+}
+
+.stats-data {
+    display: flex;
+    gap: 6em;
+    color: white;
+    font-family: "Outfit", serif;
+    font-size: 0.7em;
+}
+
+#data1 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 100;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+}
+
+#data2 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 100;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+}
+
+#data3 {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-weight: 100;
+    font-size: 0.7em;
+    letter-spacing: 0.1em;
+}
+
+.stats-img {
+    position: relative;
+}
+
+.stats-card-img {
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+    width: 100%;
+    height: 100%;
+}
+
+.gradient {
+    width: 100%;
+    height: 100%;
+    background-color: #9D54C9;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.4;
+    border-top-right-radius: 0.5em;
+    border-bottom-right-radius: 0.5em;
+}
+
+@media screen and (min-width: 620px) {
+    .gradient {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+    
+    .stats-card-img {
+        border-top-right-radius: 1em;
+        border-bottom-right-radius: 1em;
+    }
+    
+    .stats-card-content {
+        border-top-left-radius: 1em;
+        border-bottom-left-radius: 1em;
+    }
+}
+
+@media screen and (max-width: 619px) {
+    .stats-card-content {
+        border-bottom-left-radius: 1em;
+        border-bottom-right-radius: 1em;
+        border-top-left-radius: 0em;
+        order: 2;
+    }
+
+    .stats-card-img {
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        border-bottom-right-radius: 0em;
+        order: 1;
+    }
+    
+    .gradient {
+        border-top-right-radius: 1em;
+        border-top-left-radius: 1em;
+        order: 1;
+    }
+
+    .container {
+        width: 20em;
+        height: 15em;
+        display: flex;
+        flex-wrap:wrap ;
+    }
+
+    .stats-data {
+        display: flex;
+        flex-direction: column;
+        gap: 1em;
+        align-items: center;
+    }
+} 
